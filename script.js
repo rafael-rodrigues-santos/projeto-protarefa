@@ -3,9 +3,16 @@ var filterCaracter = function(event) {
 }
 
 function somar() {
-    n1 = parseFloat(document.getElementById("number-one").value);
-    n2 = parseFloat(document.getElementById("number-two").value);
-    result = document.getElementById("result");
-    result.value = n1 + n2;
-    console.log("Resultado", result.value)
+    n1 = document.querySelector("#number-one");
+    n2 = document.querySelector("#number-two");
+    result = document.querySelector("#result");
+    if (n1.value == '') {
+        n1.classList.add('erro');
+    } else if (n2.value == ''){
+        n2.classList.add('erro');
+    } else {
+        result.value = parseFloat(n1.value) + parseFloat(n2.value);
+        n1.classList.remove('erro');
+        n2.classList.remove('erro');
+    }
 }

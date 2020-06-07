@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Calculadora</title>
+    <title>Projeto Protarefa</title>
     <script src="script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <section class="calc">
             <div class="values">
-                <input type="number" name="number-one" id="number-one" class="numbers" onkeypress='return filterCaracter(event)'>
+                <input type="number" name="number-one" id="number-one" class="numbers"
+                    onkeypress='return filterCaracter(event)'>
                 <div class="simbol">+</div>
-                <input type="number" name="number-two" id="number-two" class="numbers" onkeypress='return filterCaracter(event)'>
+                <input type="number" name="number-two" id="number-two" class="numbers"
+                    onkeypress='return filterCaracter(event)'>
                 <div class="simbol">=</div>
                 <input type="text" name="result" id="result" value="0" disabled="disabled">
             </div>
@@ -23,6 +27,7 @@
             <button onclick="somar()">Somar</button>
         </section>
     </div>
-    
+
 </body>
+
 </html>

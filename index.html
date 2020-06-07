@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Calculadora</title>
-    <script src="../script.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <section class="calc">
             <div class="values">
-                <input type="number" name="number-one" id="number-one">
-                <input type="number" name="number-two" id="number-two">
+                <input type="number" name="number-one" id="number-one" onkeypress='return filterCaracter(event)'>
+                <input type="number" name="number-two" id="number-two" onkeypress='return filterCaracter(event)'>
                 <input type="text" name="result" id="result" disabled="disabled">
             </div>
-            <div class="resul">
+            <div class="result">
 
             </div>
             <button onclick="somar()">Somar</button>

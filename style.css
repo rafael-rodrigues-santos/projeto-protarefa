@@ -106,3 +106,15 @@ button:hover {
     cursor: pointer;
     box-shadow: 0 0 6px 0 #fff;
 }
+
+@media (min-width: 360px) and (orientation: landscape) { 
+    input[type=number] {
+        height: 50px;
+        font-size: 40px;
+    }
+    
+    input[type=text] {
+        height: 50px;
+        font-size: 60px;
+    }
+ }
